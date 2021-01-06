@@ -20,7 +20,40 @@ namespace ViewAndItemCustomization
         private bool showSubmitButtons = true;
         private FlowDirection flowDirection = FlowDirection.LeftToRight;
         private FlyoutPlacementMode dropDownPlacement = FlyoutPlacementMode.BottomEdgeAlignedRight;
+        private DateTimeOffsetCollection blackoutTimes;
+        private DateTimeOffset? selectedTime = DateTimeOffset.Now.Date;
 
+        public DateTimeOffset? SelectedTime
+        {
+            get
+            {
+                return selectedTime;
+            }
+            set
+            {
+                if (selectedTime != value)
+                {
+                    selectedTime = value;
+                    this.RaisePropertyChanged(nameof(this.SelectedTime));
+                }
+            }
+        }
+
+        public DateTimeOffsetCollection BlackoutTimes
+        {
+            get
+            {
+                return blackoutTimes;
+            }
+            set
+            {
+                if (blackoutTimes != value)
+                {
+                    blackoutTimes = value;
+                    this.RaisePropertyChanged(nameof(this.BlackoutTimes));
+                }
+            }
+        }
         public FlyoutPlacementMode DropDownPlacement
         {
             get
@@ -213,7 +246,13 @@ namespace ViewAndItemCustomization
 
         public TimePickerViewModel()
         {
-
+            BlackoutTimes = new DateTimeOffsetCollection();
+            BlackoutTimes.Add(new DateTimeOffset(DateTimeOffset.Now.Year, DateTimeOffset.Now.Month, DateTimeOffset.Now.Day, 0, 3, 0, DateTimeOffset.Now.Offset));
+            BlackoutTimes.Add(new DateTimeOffset(DateTimeOffset.Now.Year, DateTimeOffset.Now.Month, DateTimeOffset.Now.Day, 0, 58, 0, DateTimeOffset.Now.Offset));
+            BlackoutTimes.Add(new DateTimeOffset(DateTimeOffset.Now.Year, DateTimeOffset.Now.Month, DateTimeOffset.Now.Day, 1, 0, 0, DateTimeOffset.Now.Offset));
+            BlackoutTimes.Add(new DateTimeOffset(DateTimeOffset.Now.Year, DateTimeOffset.Now.Month, DateTimeOffset.Now.Day, 3, 0, 0, DateTimeOffset.Now.Offset));
+            BlackoutTimes.Add(new DateTimeOffset(DateTimeOffset.Now.Year, DateTimeOffset.Now.Month, DateTimeOffset.Now.Day, 9, 0, 0, DateTimeOffset.Now.Offset));
+            BlackoutTimes.Add(new DateTimeOffset(DateTimeOffset.Now.Year, DateTimeOffset.Now.Month, DateTimeOffset.Now.Day, 10, 0, 0, DateTimeOffset.Now.Offset));
         }
     }
 }

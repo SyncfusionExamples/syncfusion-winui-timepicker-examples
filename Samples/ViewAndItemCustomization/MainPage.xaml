@@ -31,6 +31,8 @@
             x:Name="sfTimePicker"
             MinWidth="160" 
             Margin="0,100,0,0"
+            SelectedTime="{x:Bind viewModel.SelectedTime,Mode=TwoWay}"
+            BlackoutTimes="{x:Bind viewModel.BlackoutTimes, Mode=TwoWay}"
             MinItemWidth="{x:Bind viewModel.MinItemWidth, Mode=TwoWay}" 
             MaxItemWidth="{x:Bind viewModel.MaxItemWidth, Mode=TwoWay}" 
             ItemWidth="{x:Bind viewModel.ItemWidth, Mode=TwoWay}" 
@@ -43,6 +45,7 @@
             DropDownPlacement="{x:Bind viewModel.DropDownPlacement, Mode=TwoWay}" 
             DropDownHeight="{x:Bind viewModel.DropDownHeight, Mode=TwoWay}" 
             FlowDirection="{x:Bind viewModel.FlowDirection, Mode=TwoWay}" 
+            VisibleItemsCount="8"
             HorizontalAlignment="Center"
             VerticalAlignment="Top"/>
         <ScrollViewer  Grid.Column="1">
