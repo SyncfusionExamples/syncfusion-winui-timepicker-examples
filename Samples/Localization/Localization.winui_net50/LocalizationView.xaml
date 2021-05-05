@@ -1,0 +1,54 @@
+﻿<Page
+    x:Class="Localization.LocalizationView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Localization"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:editors="using:Syncfusion.UI.Xaml.Editors"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.DataContext>
+        <local:LocalizationViewModel x:Name="viewModel" />
+    </Page.DataContext>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <editors:SfTimePicker
+            x:Name="sfTimePicker"
+            MinWidth="180"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            IsOpen="{x:Bind viewModel.IsOpen,Mode=TwoWay}"
+            Margin="0,100,0,0"/>
+        <ScrollViewer  Grid.Column="1" HorizontalAlignment="Center">
+            <StackPanel>
+                <ComboBox
+                    Margin="5"
+                    Width="180"
+                    Header="ClockIdentifier"
+                    ItemsSource="{Binding Items}"
+                    SelectedItem="{Binding ElementName=sfTimePicker, Path=ClockIdentifier, Mode=TwoWay}"/>
+                <CheckBox
+                    Content="IsOpen"
+                    Width="180"
+                    Margin="5"
+                    IsChecked="{x:Bind viewModel.IsOpen, Mode=TwoWay}" />
+                <ComboBox
+                    x:Name="languages"
+                    Margin="5"
+                    Width="180"
+                    Header="Languages"
+                    DisplayMemberPath="Name"
+                    SelectedValuePath="Code"
+                    ItemsSource="{Binding Languages}"
+                    SelectedIndex="0"
+                    SelectionChanged="languages_SelectionChanged"/>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

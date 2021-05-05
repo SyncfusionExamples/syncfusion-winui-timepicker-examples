@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31220.234
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "SpinnerCustomUI.winui_net50 (Package)", "SpinnerCustomUI.winui_net50 (Package)\SpinnerCustomUI.winui_net50 (Package).wapproj", "{87BF3D23-37F6-44FE-9613-C6852ABCC6C4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpinnerCustomUI.winui_net50", "SpinnerCustomUI.winui_net50\SpinnerCustomUI.winui_net50.csproj", "{E5DFAE4B-8061-483C-835C-EF4D15C04EEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|arm64 = Debug|arm64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|arm64 = Release|arm64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87BF3D23-37F6-44FE-9613-C6852ABCC6C4}.Debug|arm64.ActiveCfg = Debug|arm64
+		{87BF3D23-37F6-44FE-9613-C6852ABCC6C4}.Debug|arm64.Build.0 = Debug|arm64
+		{87BF3D23-37F6-44FE-9613-C6852ABCC6C4}.Debug|arm64.Deploy.0 = Debug|arm64
+		{87BF3D23-37F6-44FE-9613-C6852ABCC6C4}.Debug|x64.ActiveCfg = Debug|x64
+		{87BF3D23-37F6-44FE-9613-C6852ABCC6C4}.Debug|x64.Build.0 = Debug|x64
+		{87BF3D23-37F6-44FE-9613-C6852ABCC6C4}.Debug|x64.Deploy.0 = Debug|x64
+		{87BF3D23-37F6-44FE-9613-C6852ABCC6C4}.Debug|x86.ActiveCfg = Debug|x86
+		{87BF3D23-37F6-44FE-9613-C6852ABCC6C4}.Debug|x86.Build.0 = Debug|x86
+		{87BF3D23-37F6-44FE-9613-C6852ABCC6C4}.Debug|x86.Deploy.0 = Debug|x86
+		{87BF3D23-37F6-44FE-9613-C6852ABCC6C4}.Release|arm64.ActiveCfg = Release|arm64
+		{87BF3D23-37F6-44FE-9613-C6852ABCC6C4}.Release|arm64.Build.0 = Release|arm64
+		{87BF3D23-37F6-44FE-9613-C6852ABCC6C4}.Release|arm64.Deploy.0 = Release|arm64
+		{87BF3D23-37F6-44FE-9613-C6852ABCC6C4}.Release|x64.ActiveCfg = Release|x64
+		{87BF3D23-37F6-44FE-9613-C6852ABCC6C4}.Release|x64.Build.0 = Release|x64
+		{87BF3D23-37F6-44FE-9613-C6852ABCC6C4}.Release|x64.Deploy.0 = Release|x64
+		{87BF3D23-37F6-44FE-9613-C6852ABCC6C4}.Release|x86.ActiveCfg = Release|x86
+		{87BF3D23-37F6-44FE-9613-C6852ABCC6C4}.Release|x86.Build.0 = Release|x86
+		{87BF3D23-37F6-44FE-9613-C6852ABCC6C4}.Release|x86.Deploy.0 = Release|x86
+		{E5DFAE4B-8061-483C-835C-EF4D15C04EEB}.Debug|arm64.ActiveCfg = Debug|arm64
+		{E5DFAE4B-8061-483C-835C-EF4D15C04EEB}.Debug|arm64.Build.0 = Debug|arm64
+		{E5DFAE4B-8061-483C-835C-EF4D15C04EEB}.Debug|x64.ActiveCfg = Debug|x64
+		{E5DFAE4B-8061-483C-835C-EF4D15C04EEB}.Debug|x64.Build.0 = Debug|x64
+		{E5DFAE4B-8061-483C-835C-EF4D15C04EEB}.Debug|x86.ActiveCfg = Debug|x86
+		{E5DFAE4B-8061-483C-835C-EF4D15C04EEB}.Debug|x86.Build.0 = Debug|x86
+		{E5DFAE4B-8061-483C-835C-EF4D15C04EEB}.Release|arm64.ActiveCfg = Release|arm64
+		{E5DFAE4B-8061-483C-835C-EF4D15C04EEB}.Release|arm64.Build.0 = Release|arm64
+		{E5DFAE4B-8061-483C-835C-EF4D15C04EEB}.Release|x64.ActiveCfg = Release|x64
+		{E5DFAE4B-8061-483C-835C-EF4D15C04EEB}.Release|x64.Build.0 = Release|x64
+		{E5DFAE4B-8061-483C-835C-EF4D15C04EEB}.Release|x86.ActiveCfg = Release|x86
+		{E5DFAE4B-8061-483C-835C-EF4D15C04EEB}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A936FB6B-934D-4438-9A14-DAA682148CDB}
+	EndGlobalSection
+EndGlobal
