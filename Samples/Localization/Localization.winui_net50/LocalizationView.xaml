@@ -25,7 +25,7 @@
             VerticalAlignment="Top"
             IsOpen="{x:Bind viewModel.IsOpen,Mode=TwoWay}"
             Margin="0,100,0,0"/>
-        <ScrollViewer  Grid.Column="1" HorizontalAlignment="Center">
+        <ScrollViewer  Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
             <StackPanel>
                 <ComboBox
                     Margin="5"
